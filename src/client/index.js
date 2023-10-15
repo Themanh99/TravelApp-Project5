@@ -1,12 +1,11 @@
-import { handleSubmit } from "./js/formHandler";
-import { sendRequest } from "./js/formHandler";
-import { checkUrl } from "./js/formHandler";
 import { updateUI } from "./js/updateUi";
+import { fetching } from "./js/fetchingData";
+import { datePicker } from "./js/datePicker";
+import { validateForm } from "./js/formHandler";
+import { submitForm } from "./js/submitForm";
 
+import "./styles/resultform.scss";
 import "./styles/base.scss";
-import "./styles/footer.scss";
 import "./styles/form.scss";
-import "./styles/header.scss";
-import "./styles/resets.scss";
 
-export { handleSubmit, sendRequest, updateUI, checkUrl };
+export { submitForm, validateForm, datePicker, fetching, updateUI };

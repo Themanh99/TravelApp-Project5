@@ -3,38 +3,60 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Natural Language</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel App</title>
 </head>
 
 <body>
-    <header>
-        <div class="">
-            Logo-XX
-        </div>
-        <div class="">
-            Navigation
-        </div>
+    <header class="header">
+        <ul class="tabs">
+            <li class="tab"><a href="#homeTab">Homepage</a></li>
+            <li class="tab"><a href="#blogsTab">Blogs</a></li>
+        </ul>
     </header>
-
     <main>
-        <section>
-            <form class="" onsubmit="return Client.handleSubmit(event)">
-                <input id="url" type="text" name="input" value="" placeholder="https://api.meaningcloud.com">
-                <input type="submit" name="" value="Send" onclick="return Client.handleSubmit(event)"
-                    onsubmit="return handleSubmit(event)">
+        <div id="app">
+            <form id="form" action="javascript:;" onsubmit="return Client.submitForm(event)">
+                <div class="searchinfo headline">
+                    Travel App
+                </div>
+                <div class="searchinfo">
+                    <label for="location">Please input Location here</label>
+                    <input type="text" id="location" name="location" placeholder="Input country">
+                </div>
+                <div class="searchinfo">
+                    <label for="city">Enter the city of country here</label>
+                    <input type="text" id="city" name="city" placeholder="Input city of country">
+                </div>
+                <div class="searchinfo">
+                    <label for="datestart">Start date</label>
+                    <input type="Date" id="datestart" name="datestart">
+                </div>
+                <div class="searchinfo">
+                    <label for="datend">End date</label>
+                    <input type="Date" id="datend" name="datend">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Send" id="submit">
+                </div>
             </form>
-            <div id="error"></div>
-        </section>
-
-        <section>
-            <!-- View results -->
-            <strong>Form Results:</strong>
-            <div id="result">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#homeTab">Homepage</a></li>
+                    <li><a href="#blogsTab">Blogs</a></li>
+                    <li><a href="#aboutTab">About</a></li>
+                    <li><a href="#account">Account</a></li>
+                    <li><a href="#page">Page</a></li>
+                    <!-- Add more menu items as needed -->
+                </ul>
             </div>
-        </section>
+
+        </div>
+        <div class="searchinfo entry" id="resultform"></div>
     </main>
-    <footer>
-        <p>Copyright &copy; 2023 ManhCT</p>
+    <footer class="footer" id="footer">
+        <em>Copyright by <strong>ManhCT@fpt.com</strong></em>
+        <em><u>See Design System</u></em>
     </footer>
     <!-- Service Workers -->
     <script>

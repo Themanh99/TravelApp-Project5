@@ -1,9 +1,8 @@
-# Udacity Project 4: Natural Language Processing
+# Udacity Project 5: Travel App
 
 ## Overview
 
-This project allow users to run Natural Language Processing (NLP) on other websites by the help of MeaningCloud API.
-You can check the decumentation [here](https://learn.meaningcloud.com/developer/sentiment-analysis/2.1/doc/examples)
+This project allow users to run Travel App on other websites by the help of GeoName API , Weather API and Pixabay API.
 
 **The goal of this project is to give you practice with:**
 
@@ -41,4 +40,5 @@ The first command will create a `dist` folder with the built code.
 
 ## Preview
 
-![website preview](Image.png)
+![website preview](image.png)
+![website preview2](image2.png)
